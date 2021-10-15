@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	
+	<script>
+		
+		/* 26) Составьте программу, которая принимает с клавиатуры целое число, соответствующее порядковому номеру месяца. 
+		В случае, если полученное значение равно порядковому номеру одного из месяцев, следует вывести сезон (лето, осень, зима, весна),
+		к которому относится месяц. 
+		В случае, если введенное значение не является порядковым номером месяца, следует вывести на экран сообщение об ошибке. */
+
+		var month = +prompt('enter number');
+
+		if (month < 13 && month > 0) {
+			if (month < 3 || month == 12) {
+				alert('winter')
+			} else if (month > 2 && month < 6) {
+				alert('spring')
+			} else if (month > 5 && month < 9) {
+				alert('summer');
+			} else if (month > 8 && month < 12) {
+				alert('autumn');
+			}
+		} else {
+			alert('oshibka')
+		}
+		
+
+
+	</script>
+</body>
+</html>
